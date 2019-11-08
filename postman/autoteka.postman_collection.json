@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "45954763-6b0f-4263-a8bc-a46908f0a25d",
+		"name": "autoteka",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create id 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":1,\"brand\":\"skoda\",\"model\":\"yeti\",\"engine_volume\":1.2}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8092/autos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8092",
+					"path": [
+						"autos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create id 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":2,\"brand\":\"skoda\",\"model\":\"yeti\",\"engine_volume\":1.8}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8092/autos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8092",
+					"path": [
+						"autos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find id 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8092/autos/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8092",
+					"path": [
+						"autos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find id 2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8092/autos/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8092",
+					"path": [
+						"autos",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find id 3 and get error",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8092/autos/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8092",
+					"path": [
+						"autos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update id 1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":1,\"brand\":\"skoda\",\"model\":\"kodiaq\",\"engine_volume\":2.0}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8092/autos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8092",
+					"path": [
+						"autos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete id 2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":3,\"brand\":\"skoda\",\"model\":\"kodiaq\",\"engine_volume\":2.0}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8092/autos/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8092",
+					"path": [
+						"autos",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
